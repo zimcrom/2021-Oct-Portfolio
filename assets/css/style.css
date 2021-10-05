@@ -4,3 +4,7 @@ position: fixed;
 bottom: 0px;
 width: 100%;
 }
+
+h1, h3 {
+    text-align: center;
+}
