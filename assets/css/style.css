@@ -1,15 +1,32 @@
 footer {
-    text-align: center;
-position: fixed;
-bottom: 0px;
-width: 100%;
-z-index: 1;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1;
 }
 
-h1, h3 {
-    text-align: center;
+h1,
+h3 {
+  text-align: center;
 }
 
 .card {
-    margin: 0.75%;
+  margin: 0.75%;
+  color: #673ab7;
+
 }
+
+a {
+  color: #b39ddb;
+}
+
+body {
+  background: #d1c4e9;
+  color: #673ab7;
+}
+
+.brand-logo {
+    margin-left: 1%;
+}
+
