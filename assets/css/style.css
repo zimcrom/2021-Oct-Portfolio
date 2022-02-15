@@ -12,9 +12,15 @@ h3 {
 }
 
 .card {
-  margin: 0.75%;
+  margin: 1%;
   color: #673ab7;
+  width: 48%;
+}
 
+.contentList {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 a {
@@ -22,42 +28,68 @@ a {
 }
 
 body {
-  background: #d1c4e9;
-  color: #673ab7;
+  background-color: #ffff00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  /* background by SVGBackgrounds.com */
+  font-family: "Montserrat", sans-serif;
 }
 
 .brand-logo {
-    margin-left: 1%;
+  margin-left: 1%;
 }
 
 .collection {
-  float: left;
-  width: 25%;
+  width: 30%;
   margin: 1%;
+  background-color: white;
 }
 
 .responsiveSelfie {
-  width: 25%
+  width: 50%;
+  float: left;
+}
+
+.openingIndexText {
+  float: left;
+  width: 50%;
+}
+
+.logos {
+  width: 30%;
+  margin: 1%;
+  float: left;
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
   .collection {
-    float: left;
     width: 50%;
   }
   .responsiveSelfie {
-    width: 50%
+    width: 75%;
+  }
+  .openingIndexText {
+    width: 75%;
+  }
+  .card {
+    width: 75%;
   }
 }
 
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .collection {
-    float: left;
     width: 100%;
   }
   .responsiveSelfie {
-    width: 100%
+    width: 100%;
+  }
+  .openingIndexText {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
   }
 }
